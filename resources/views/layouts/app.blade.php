@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Peminjaman Buku')</title>
     @vite('resources/css/app.css') <!-- Jika menggunakan Vite -->
-    {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> <!-- Hapus ini jika hanya menggunakan Vite --> --}}
+    {{--
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet"> <!-- Hapus ini jika hanya menggunakan Vite --> --}}
 </head>
+
 <body class="bg-gray-100">
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
         <header class="bg-blue-600 text-white p-4">
             <h1 class="text-2xl">Peminjaman Buku</h1>
-            <nav class="mt-2">
-                <ul class="flex space-x-4">
-                    <li><a href="{{ route('books.index') }}" class="hover:underline">Daftar Buku</a></li>
-                    <li><a href="{{ route('books.create') }}" class="hover:underline">Tambah Buku</a></li>
-                    <li><a href="{{ route('loans.index') }}" class="hover:underline">Riwayat Peminjaman</a></li>
-                </ul>
-            </nav>
         </header>
 
         <!-- Main Content -->
@@ -44,4 +40,5 @@
         </footer>
     </div>
 </body>
+
 </html>

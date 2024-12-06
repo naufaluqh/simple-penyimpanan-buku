@@ -17,11 +17,6 @@
         </div>
 
         <div class="mb-4">
-            <label for="isbn" class="block text-sm font-medium text-gray-700">ISBN</label>
-            <input type="text" id="isbn" name="isbn" class="w-full p-2 border border-gray-300 rounded" required>
-        </div>
-
-        <div class="mb-4">
             <label for="description" class="block text-sm font-medium text-gray-700">Deskripsi</label>
             <textarea id="description" name="description" class="w-full p-2 border border-gray-300 rounded"></textarea>
         </div>
